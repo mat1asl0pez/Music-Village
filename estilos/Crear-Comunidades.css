@@ -1,0 +1,9 @@
+.descripcion-comunidad{
+    height: 18vh;
+    padding-bottom: 85px;
+    overflow: auto;
+}
+.iconos {
+    width: 15vh;
+    height: 15vh;
+}
