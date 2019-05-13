@@ -7,3 +7,15 @@
     width: 15vh;
     height: 15vh;
 }
+h1, h2, h3, h4{
+    font-family: 'Exo', sans-serif;
+}
+.form-control, .custom-select, .custom-file{
+    font-family: 'Saira Semi Condensed', sans-serif;
+}
+.reglas{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    
+}
+

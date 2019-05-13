@@ -8,67 +8,89 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Exo|Handlee|Saira+Semi+Condensed|Satisfy" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     
-    <h1>Crear Comunidad</h1>
+    
+    <div class="col-9">
+        <h1>Crear Comunidad</h1>
+        <br>
 
-    <form>
-        <div class="form-group container-fluid row">
-          <input type="text" class="form-control col-4" id="formGroupExampleInput" placeholder="Nombre de la Comunidad" >
+        <form>
+            <div class="form-group container-fluid row">
+            <input type="text" class="form-control col-4" id="formGroupExampleInput" placeholder="Nombre de la Comunidad" >
+            </div>
+        </form>
+
+        <div class="container-fluid row">
+            <select class="custom-select col-4">
+                <option selected>Tópico de la Comunidad</option>
+                <option value="1">Artista o Banda</option>
+                <option value="2">Género</option>
+            </select>
         </div>
-    </form>
+        <br>
+        <div class="container-fluid row">
+                <textarea class="form-control descripcion-comunidad col-9">Descripción</textarea> 
+        </div>
+        <br>
+            <h3>Reglas</h3>
+        <br>
+        <div class="container-fluid row">
+            <input class="form-control col-4 reglas" type="text" placeholder="No postear links externos" readonly>
+            
+            <input class="form-control col-4 reglas" type="text" placeholder="No publicar spam" readonly>
+            
+            <input class="form-control col-4 reglas" type="text" placeholder="No publicar contenido discriminatorio, violento o de índole sexual" readonly>
+            
+            <input class="form-control col-4 reglas" type="text" placeholder="Respetar a todos los integrantes" readonly>
+            
+            <input class="form-control col-4 reglas" type="text" placeholder="Regla predeterminada 5" readonly>
+            
+            <input type="text" class="form-control col-4 reglas" id="formGroupExampleInput"  placeholder="Regla para la comunidad" >
+            
+            <input type="text" class="form-control col-4 reglas" id="formGroupExampleInput" placeholder="Regla para la comunidad" >
+            
+            <input type="text" class="form-control col-4 reglas" id="formGroupExampleInput" placeholder="Regla para la comunidad" >
+            
+            <input type="text" class="form-control col-4 reglas" id="formGroupExampleInput" placeholder="Regla para la comunidad" >
+            
+            <input type="text" class="form-control col-4 reglas" id="formGroupExampleInput" placeholder="Regla para la comunidad" >
+        </div>
 
-    <div class="container-fluid row">
-        <select class="custom-select col-4">
-            <option selected>Tópico de la Comunidad</option>
-            <option value="1">Artista o Banda</option>
-            <option value="2">Género</option>
-        </select>
-    </div>
-    <br>
-    <div class="container-fluid row">
-            <textarea class="form-control descripcion-comunidad col-8">Descripción</textarea> 
-    </div>
-    <br>
-    <div class="container-fluid row">
-        <input class="form-control col-7" type="text" placeholder="No postear links externos" readonly>
-        <input class="form-control col-7" type="text" placeholder="No publicar spam" readonly>
-        <input class="form-control col-7" type="text" placeholder="No publicar contenido discriminatorio, violento o de índole sexual" readonly>
-        <input class="form-control col-7" type="text" placeholder="Respetar a todos los integrantes" readonly>
-        <input class="form-control col-7" type="text" placeholder="Regla predeterminada 5" readonly>
-        <input type="text" class="form-control col-7" id="formGroupExampleInput" placeholder="Regla para la comunidad" >
-        <input type="text" class="form-control col-7" id="formGroupExampleInput" placeholder="Regla para la comunidad" >
-        <input type="text" class="form-control col-7" id="formGroupExampleInput" placeholder="Regla para la comunidad" >
-        <input type="text" class="form-control col-7" id="formGroupExampleInput" placeholder="Regla para la comunidad" >
-        <input type="text" class="form-control col-7" id="formGroupExampleInput" placeholder="Regla para la comunidad" >
-    </div>
-    <br>
-    <h3>Editar apariencia</h3>
-    <br>
-    
-    <div>
-        <input type="radio" name="auriculares" value="auriculares"/>
-        <label><img src="C:\Users\Comunidad IT - 11\Desktop\php-2019\Red-social\imagenes\auri.jpg" class= "iconos"></label>
+        <br>
+        <h3>Editar apariencia</h3>
+        <br>
+        <h4>Icono</h4>
+        <div>
+            <input type="radio" name="icono" value="auriculares">
+            <label><img src="../imagenes/auri.jpg" class= "iconos"></label>
 
-        <input type="radio" name="disco" value="disco"/>
-        <label><img src="C:\Users\Comunidad IT - 11\Desktop\php-2019\Red-social\imagenes\disco.jpg" class= "iconos"></label>
+            <input type="radio" name="icono" value="disco">
+            <label><img src="../imagenes/disco.jpg" class= "iconos"></label>
 
-        <input type="radio" name="microfono" value="microfono"/>
-        <label><img src="C:\Users\Comunidad IT - 11\Desktop\php-2019\Red-social\imagenes\microfono.jpg" class= "iconos"></label>
+            <input type="radio" name="icono" value="microfono">
+            <label><img src="../imagenes/microfono.jpg" class= "iconos"></label>
 
-        <input type="radio" name="parlante" value="parlante"/>
-        <label><img src="C:\Users\Comunidad IT - 11\Desktop\php-2019\Red-social\imagenes\parlante.jpg" class= "iconos"></label>
-    </div>
-    
-    <br>
+            <input type="radio" name="icono" value="parlante">
+            <label><img src="../imagenes/parlante.jpg" class= "iconos"></label>
+        </div>
+        
+        <br>
 
-    <div class="custom-file container-fluid row">
-            <input type="file" class="custom-file-input" id="customFile">
-            <label class="custom-file-label col-4" for="customFile"> O seleccione ícono de Comunidad</label>
-    </div>
-          
+        <div class="custom-file container-fluid row">
+                <input type="file" class="custom-file-input" id="customFile">
+                <label class="custom-file-label col-4" for="customFile"> Seleccione una imagen</label>
+        </div>
+
+        <br> <br>
+
+        <h4>Paleta de colores</h4>
+        <input type="color" name="" id="">
+
+    </div>      
 
 </body>
 </html>
