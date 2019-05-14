@@ -4,8 +4,8 @@
     overflow: auto;
 }
 .iconos {
-    width: 15vh;
-    height: 15vh;
+    width: 10vh;
+    height: 10vh;
 }
 h1, h2, h3, h4{
     font-family: 'Exo', sans-serif;
@@ -14,8 +14,18 @@ h1, h2, h3, h4{
     font-family: 'Saira Semi Condensed', sans-serif;
 }
 .reglas{
-    margin-left: 10px;
-    margin-bottom: 10px;
     
+    margin-bottom: 10px;   
 }
 
+.contenido{
+    background-color:  #8fb8de
+}
+.lateral{
+    background-color: #8fb8de
+
+}
+
+.jumbotron{
+    height: 100px;
+}
