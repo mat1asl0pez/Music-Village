@@ -1,0 +1,29 @@
+.card-header{
+    background-color: #A9E5BB;
+}
+
+.bg-primary{
+    background-color: white !important;
+}
+
+.C-post {
+    height: 15vh;
+    overflow: auto;
+}
+
+
+input {
+    width: 100%;
+    margin-bottom: 2vh;
+    line-height: 1vh;
+}
+
+textarea {
+    width: 100%;
+    height: 20vh;
+}
+
+.btn{
+    margin-top: 1vh;
+    width: 100%;
+}
