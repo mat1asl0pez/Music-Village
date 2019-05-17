@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 $("#post-button").click(function() {
-    $("#post-done").append(
+    $("#post-done").after(
         '<div class="card text bg-primary mb-3">' +
             '<div class="card-body">' +
                 '<h4 class="card-title">' + 
