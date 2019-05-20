@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos/Comunidades.css">
     <title>Comunidades</title>
 </head>
 
 <body>
     <div class="jumbotron">
+       
 
     </div>
 
@@ -23,29 +24,40 @@
 
                 <div class="card text bg-primary mb-3">
                     <div class="card-body">
-                        <div class="Tpost"><input type="text" name="Titulo Post" id="post-title"></div>
-                        <div class="Cpost"><textarea name="Contenido post" id="post-message"></textarea></div>
+                        <div class="Tpost">
+                            <input type="text" name="Titulo Post" id="post-title">
+                        </div>
+                        <div class="Cpost">
+                            <textarea name="Contenido post" id="post-message"></textarea>
+                        </div>
                         <div class="container-fluid row">
-                            <div class="offset-md-11 offset-sm-8"><button type="button" class="btn btn-success"
-                                    id="post-button">Postear</button></div>
+                            <div class="offset-md-11 offset-sm-8">
+                                <button type="button" class="btn btn-success" id="post-button">Postear</button>
+                            </div>
                         </div>
                     </div>
-
                 </div>
-                <div class="card text" id="post-done">
-                </div>
-
-
+                <div id="post-done"></div>
                 <div class="card text bg-primary mb-3">
 
                     <div class="card-body container-fluid">
                         <div class="row">
                             <div class="acciones col-1">
-                                <div class="comentar"><i class="fas fa-drum"></i></div>
-                                <div class="positivo"><i class="fas fa-volume-up"></i></div>
-                                <div class="negativo"><i class="fas fa-volume-mute"></i></div>
-                                <div class="guardar"><i class="fas fa-bookmark"></i></div>
-                                <div class="compartir"><i class="fas fa-broadcast-tower"></i></div>
+                                <div class="comentar">
+                                    <i class="fas fa-drum"></i>
+                                </div>
+                                <div class="positivo">
+                                    <i class="fas fa-volume-up"></i>
+                                </div>
+                                <div class="negativo">
+                                    <i class="fas fa-volume-mute"></i>
+                                </div>
+                                <div class="guardar">
+                                    <i class="fas fa-bookmark"></i>
+                                </div>
+                                <div class="compartir">
+                                    <i class="fas fa-broadcast-tower"></i>
+                                </div>
                             </div>
                             <div class="col-9">
                                 <h4 class="card-title">Titulo del post</h4>
@@ -61,11 +73,21 @@
                     <div class="card-body container-fluid">
                         <div class="row">
                             <div class="acciones col-1">
-                                <div class="comentar"><i class="fas fa-drum"></i></div>
-                                <div class="positivo"><i class="fas fa-volume-up"></i></div>
-                                <div class="negativo"><i class="fas fa-volume-mute"></i></div>
-                                <div class="guardar"><i class="fas fa-bookmark"></i></div>
-                                <div class="compartir"><i class="fas fa-broadcast-tower"></i></div>
+                                <div class="comentar">
+                                    <i class="fas fa-drum"></i>
+                                </div>
+                                <div class="positivo">
+                                    <i class="fas fa-volume-up"></i>
+                                </div>
+                                <div class="negativo">
+                                    <i class="fas fa-volume-mute"></i>
+                                </div>
+                                <div class="guardar">
+                                    <i class="fas fa-bookmark"></i>
+                                </div>
+                                <div class="compartir">
+                                    <i class="fas fa-broadcast-tower"></i>
+                                </div>
                             </div>
                             <div class="col-9">
                                 <h4 class="card-title">Titulo del post</h4>
@@ -75,6 +97,10 @@
                     </div>
                     <div class="card-header">Posteado por USUARIO hace 20 minutos</div>
                 </div>
+
+                <!-- <div class="tooltip">Hover over me
+                    <span class="tooltiptext">Tooltip text</span>
+                </div> -->
 
 
 
@@ -82,18 +108,59 @@
 
             </div>
             <div class="col-4">
+                <div class="Descripcion">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum modi quae vero maxime repudiandae totam atque ut eius? Neque unde dolores maiores officia atque.
+                        Quae commodi voluptatibus quam nemo iusto!Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum modi quae vero maxime repudiandae totam atque ut eius? Neque unde dolores maiores officia atque.
+                        Quae commodi voluptatibus quam nemo iusto!</p>
+                </div>
+
+                
+                <div class="Admin-Mods">
+                Administradores<ul class="Admin">
+                    <li>Admin1</li>
+                    <li>Admin2</li>
+                    <li>Admin3</li>   
+                </ul>
+
+                Moderadores<ul class="Mod">
+                        <li>Mod1</li>
+                        <li>Mod2</li>
+                        <li>Mod3</li>   
+                </ul>
+                </div>
+
+                <br><br>
+                
+                <div>
+                        <p class="form-control col-8 reglas">No postear links externos</p>
+                        
+                        <p class="form-control col-8 reglas"> No publicar spam</p>
+
+                         <p class="form-control col-8 reglas">No publicar contenido discriminatorio, violento o de índole sexual</p>
+                        
+                        <p class="form-control col-8 reglas"> Respetar a todos los integrantes</p>
+
+                        <p class="form-control col-8 reglas">Regla predeterminada 5</p>
+                        
+                        <p class="form-control col-8 reglas">Regla definida por Admin</p>
+
+                        <p class="form-control col-8 reglas">Regla definida por Admin</p>
+
+                        <p class="form-control col-8 reglas">Regla definida por Admin</p>  
+                        
+                    </div>
+                </div>
+
+        
 
             </div>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script src="../js/Comunidades.js"></script>
 </body>
