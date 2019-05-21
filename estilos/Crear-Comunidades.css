@@ -15,7 +15,8 @@ h1, h2, h3, h4{
 }
 .reglas{
     
-    margin-bottom: 10px;   
+    margin-bottom: 10px;
+    height: auto   
 }
 
 .contenido{
