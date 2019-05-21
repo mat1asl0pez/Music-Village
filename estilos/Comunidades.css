@@ -46,7 +46,7 @@ textarea {
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
-    
+}   
     /*Tooltip
     position: absolute;
     z-index: 1;
@@ -59,3 +59,13 @@ textarea {
 
 .form-control{
     font-family: 'Saira Semi Condensed', sans-serif;
+    height: auto;
+}
+
+.logo{
+    width: 15vh;
+}
+#Imagenes{
+    line-height: 100% !important;
+    margin-top: 2vh;
+}
