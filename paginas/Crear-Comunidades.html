@@ -10,6 +10,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Dosis|Exo|Handlee|Saira+Semi+Condensed|Satisfy" rel="stylesheet">
     <title>Crear comunidad</title>
+    <script src="../js/Crear-Comunidades.js"></script>
 </head>
 <body>
     
@@ -17,6 +18,7 @@
         
     </div>
 
+    <form action="Comunidades.html" method="GET">
     <div class="master container-fluid">
         <div class="row">
                 <div class="contenido col-8" >
@@ -27,44 +29,38 @@
             
                         <form>
                             <div class="form-group container-fluid row">
-                            <input type="text" class="form-control col-4" id="formGroupExampleInput" placeholder="Nombre de la Comunidad" >
+                            <input type="text" class="form-control col-4" id="formGroupExampleInput" placeholder="Nombre de la Comunidad" name="Nombre" >
                             </div>
                         </form>
             
                         <div class="container-fluid row">
-                            <select class="custom-select col-4">
+                            <select class="custom-select col-4" name="Topico">
                                 <option selected>Tópico de la Comunidad</option>
-                                <option value="1">Artista o Banda</option>
-                                <option value="2">Género</option>
+                                <option value="Artista-o-banda">Artista o Banda</option>
+                                <option value="Genero">Género</option>
                             </select>
                         </div>
                         <br>
                         <div class="container-fluid row">
-                                <textarea class="form-control descripcion-comunidad col-9">Descripción</textarea> 
+                                <textarea class="form-control descripcion-comunidad col-9" name="Descripcion">Descripción</textarea> 
                         </div>
                         <br>
                             <h3>Reglas</h3>
                         <br>
                         <div class="container-fluid row">
-                            <input class="form-control col-8 reglas" type="text" placeholder="No postear links externos" readonly>
                             
-                            <input class="form-control col-8 reglas" type="text" placeholder="No publicar spam" readonly>
+                            <p class="form-control col-8 reglas">No postear links externos</p>
+                                
+                            <p class="form-control col-8 reglas"> No publicar spam</p>
+        
+                            <p class="form-control col-8 reglas">No publicar contenido discriminatorio, violento o de índole sexual</p>
+                                
+                            <p class="form-control col-8 reglas"> Respetar a todos los integrantes</p>
+        
+                            <p class="form-control col-8 reglas">Regla predeterminada 5</p>
                             
-                            <input class="form-control col-8 reglas" type="text" placeholder="No publicar contenido discriminatorio, violento o de índole sexual" readonly>
+                            <input type="text" class="form-control col-8 reglas-usuario" id="formGroupExampleInput"  placeholder="Regla para la comunidad" >
                             
-                            <input class="form-control col-8 reglas" type="text" placeholder="Respetar a todos los integrantes" readonly>
-                            
-                            <input class="form-control col-8 reglas" type="text" placeholder="Regla predeterminada 5" readonly>
-                            
-                            <input type="text" class="form-control col-8 reglas" id="formGroupExampleInput"  placeholder="Regla para la comunidad" >
-                            
-                            <input type="text" class="form-control col-8 reglas" id="formGroupExampleInput" placeholder="Regla para la comunidad" >
-                            
-                            <input type="text" class="form-control col-8 reglas" id="formGroupExampleInput" placeholder="Regla para la comunidad" >
-                            
-                            <input type="text" class="form-control col-8 reglas" id="formGroupExampleInput" placeholder="Regla para la comunidad" >
-                            
-                            <input type="text" class="form-control col-8 reglas" id="formGroupExampleInput" placeholder="Regla para la comunidad" >
                         </div>
             
                     </div>
@@ -97,13 +93,16 @@
                         </div>
                         <br>
                         <br>
+                        <button id="Crear">Crear Comunidad</button>
+                        <br>
+                        <br>
                         <footer class="container-fluid">
                                 <p>Creado para ComIT / Curso PHP 2019</p>
                         </footer>
                     </div>
         </div>
     </div>
-
+    </form>
 
     
 </body>
