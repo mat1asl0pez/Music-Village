@@ -1,0 +1,32 @@
+.descripcion-comunidad{
+    height: 18vh;
+    padding-bottom: 85px;
+    overflow: auto;
+}
+.iconos {
+    width: 10vh;
+    height: 10vh;
+}
+h1, h2, h3, h4{
+    font-family: 'Exo', sans-serif;
+}
+.form-control, .custom-select, .custom-file{
+    font-family: 'Saira Semi Condensed', sans-serif;
+}
+.reglas{
+    
+    margin-bottom: 10px;
+    height: auto   
+}
+
+.contenido{
+    background-color:  #8fb8de
+}
+.lateral{
+    background-color: #8fb8de
+
+}
+
+.jumbotron{
+    height: 100px;
+}
