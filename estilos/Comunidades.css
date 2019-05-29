@@ -1,5 +1,32 @@
+.btn{
+    color:#FF7D49;
+    border-color: #FF7D49;
+}
+.btn:hover{
+    background-color: #FF7D49;
+    color:white;
+    border-color:#FF7D49;
+}
+
+.row.nav{
+    width: 100%
+}
+.buscador{
+    margin-bottom: auto;
+    line-height: auto;
+}
+.dropdown-menu{
+    right:0;
+    left: unset;
+} 
+body{
+    background-color: #F0F0C9;
+
+}
 .card-header{
     background-color: #A9E5BB;
+    line-height: 10px;
+    font-size: 10px;
 }
 
 .bg-primary{
@@ -23,7 +50,48 @@ textarea {
     height: 20vh;
 }
 
-.btn{
-    margin-top: 1vh;
-    width: 100%;
+.fas{
+    margin: 1vh;
+    text-align: center;
+   
+}
+.navegador{
+    margin: auto;
+    text-align: auto;
+   
+}
+.acciones{
+    border-right: 1px solid black;  
+}
+
+/*.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+}   
+    Tooltip
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 105%;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible; */
+
+.reglas{
+    font-family: 'Saira Semi Condensed', sans-serif;
+    height: auto;
+}
+
+.logo{
+    width: 15vh;
+}
+#file-input{
+    line-height: 100% !important;
+    margin-top: 2vh;
 }
