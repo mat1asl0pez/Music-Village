@@ -1,48 +1,30 @@
-
 $(document).ready(function () {
-
-    $(function () {
-        $('#file-input').change(function (e) {
-            addImage(e);
-        });
-
-        function addImage(e) {
-            var file = e.target.files[0],
-                imageType = /image.*/;
-
-            if (!file.type.match(imageType))
-                return;
-
-            var reader = new FileReader();
-            reader.onload = fileOnload;
-            reader.readAsDataURL(file);
-        }
-
-        function fileOnload(e) {
-            var result = e.target.result;
-            $('#imgSalida').attr("src", result);
-        }
-    });
 
     $("#hacer-post").click(function () {
         $("#creador").html(
             '<div class="card text bg-primary mb-3" id="creador">' +
+            '<i class="fas fa-times" id="cerrar"></i> '+
             '<div class="card-body">' +
             '<div class="Tpost">' +
             '<input type="text" name="Titulo Post" id="post-title">' +
             '</div>' +
             '<div class="Cpost">' +
             '<textarea name="Contenido post" id="post-message"></textarea>' +
-            '<input name="file-input" id="file-input" type="file" />' +
-            '</div>' +
             '<div class="container-fluid row">' +
+            '<br>' +
             '<div class="offset-md-11 offset-sm-8">' +
             '<button type="button" class="btn" id="post-button">Postear</button>' +
             '</div>' +
             '</div>' +
             '</div>' +
             '</div>'
-        );
+            ).toggle();
+
+        $("#cerrar").click(function () {
+            $("#creador").toggle();
+    
+        });
+    
 
         $("#post-button").click(function () {
             $("#post-done").prepend(
@@ -63,16 +45,16 @@ $(document).ready(function () {
                 '<p class="card-text">' +
                 $("#post-message").val() +
                 '</p>' +
-                '<img id="imgSalida" src="" />' +
                 '</div>' +
                 '</div>' +
                 '</div>' +
                 '<div class="card-header">Posteado por USUARIO hace 20 minutos</div>' +
                 '</div>'
-
             );
 
-
         });
+
     });
+
+    
 });
