@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .btn{
     color:#FF7D49;
     border-color: #FF7D49;
@@ -95,76 +94,4 @@ textarea {
 #file-input{
     line-height: 100% !important;
     margin-top: 2vh;
-=======
-.card-header{
-    background-color: #A9E5BB;
-    line-height: 10px;
-    font-size: 10px;
-}
-
-.bg-primary{
-    background-color: white !important;
-}
-
-.C-post {
-    height: 15vh;
-    overflow: auto;
-}
-
-
-input {
-    width: 100%;
-    margin-bottom: 2vh;
-    line-height: 1vh;
-}
-
-textarea {
-    width: 100%;
-    height: 20vh;
-}
-
-.btn{
-    margin-top: 1vh;
-    width: 100%;
-}
-.fas{
-    margin: 1vh;
-    text-align: center;
-   
-}
-.acciones{
-    border-right: 1px solid black;  
-}
-
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-}   
-    /*Tooltip
-    position: absolute;
-    z-index: 1;
-    top: -5px;
-    left: 105%;
-  }
-  
-  .tooltip:hover .tooltiptext {
-    visibility: visible; */
-
-.form-control{
-    font-family: 'Saira Semi Condensed', sans-serif;
-    height: auto;
-}
-
-.logo{
-    width: 15vh;
-}
-#Imagenes{
-    line-height: 100% !important;
-    margin-top: 2vh;
->>>>>>> e1288c5eec444cf1974cf46c369eaf7902910aba
 }
