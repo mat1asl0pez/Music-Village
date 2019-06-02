@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    $("#hacer-post").click(function () {
+    $("#boton-post").click(function () {
         $("#creador").html(
             '<div class="card text bg-primary mb-3" id="creador">' +
             '<i class="fas fa-times" id="cerrar"></i> '+
@@ -11,9 +11,9 @@ $(document).ready(function () {
             '<div class="Cpost">' +
             '<textarea name="Contenido post" id="post-message"></textarea>' +
             '<div class="container-fluid row">' +
-            '<br>' +
-            '<div class="offset-md-11 offset-sm-8">' +
-            '<button type="button" class="btn" id="post-button">Postear</button>' +
+            '<div class="offset-md-10 offset-sm-6">' +
+            '<br>'+
+            '<button type="submit" class="button" id="post-button"><span id="contenidoPostear">Postear</span></button>' +
             '</div>' +
             '</div>' +
             '</div>' +
@@ -32,11 +32,11 @@ $(document).ready(function () {
                 '<div class="card-body container-fluid">' +
                 '<div class="row">' +
                 '<div class="acciones col-1">' +
-                '<div class="positivo"><i class="fas fa-volume-up"></i></div>' +
-                '<div class="negativo"><i class="fas fa-volume-mute"></i></div>' +
-                '<div class="comentar"><i class="fas fa-drum"></i></div>' +
-                '<div class="guardar"><i class="fas fa-bookmark"></i></div>' +
-                '<div class="compartir"><i class="fas fa-broadcast-tower"></i></div>' +
+                '<div class="positivo"><i class="fas fa-volume-up" id="votoPositivo"></i></div>' +
+                '<div class="negativo"><i class="fas fa-volume-mute" id="votoNegativo"></i></div>' +
+                '<div class="comentar"><i class="fas fa-drum" id="Comentar"></i></div>' +
+                '<div class="guardar"><i class="fas fa-bookmark" id="Guardar"></i></div>' +
+                '<div class="compartir"><i class="fas fa-broadcast-tower" id="Compartir"></i></div>' +
                 '</div>' +
                 '<div class="col-9">' +
                 '<h4 class="card-title">' +
@@ -51,10 +51,21 @@ $(document).ready(function () {
                 '<div class="card-header">Posteado por USUARIO hace 20 minutos</div>' +
                 '</div>'
             );
+// ICONOS DE POST //
 
+$("#votoPositivo").click(function(){
+    alert("Diste un voto Positivo");
+  });
+
+$("#votoNegativo").click(function(){
+    alert("Diste un voto Negativo");
+  });
+
+$("#Guardar").click(function(){
+    alert("Post Guardado");
+  });
         });
 
     });
 
-    
 });
